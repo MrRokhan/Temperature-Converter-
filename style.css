@@ -10,18 +10,20 @@
 body {
     background-color: #f0f4f7;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
+    padding-top: 50px; /* Space for header */
 }
 
 /* Header */
 header {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Space between header and main content */
 }
 
 /* Main Container */
@@ -30,7 +32,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 300px;
+    width: 320px;
 }
 
 /* Input Field */
@@ -44,11 +46,21 @@ input[type="number"] {
     color: #333;
 }
 
+/* Dropdown Containers */
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.dropdowns div {
+    width: 48%;
+}
+
 /* Select Dropdown */
 select {
     width: 100%;
     padding: 10px;
-    margin: 15px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
